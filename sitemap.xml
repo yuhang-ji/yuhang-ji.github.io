@@ -92,13 +92,6 @@
 
   
   <url>
-    <loc>https://yuhang-ji.github.io/tags/Markdown/</loc>
-    <lastmod>2024-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://yuhang-ji.github.io/tags/Newsvendor/</loc>
     <lastmod>2024-11-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -112,17 +105,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://yuhang-ji.github.io/tags/Markdown/</loc>
+    <lastmod>2024-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://yuhang-ji.github.io/categories/Markdown/</loc>
+    <loc>https://yuhang-ji.github.io/categories/Dynamic-Programming/</loc>
     <lastmod>2024-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yuhang-ji.github.io/categories/Dynamic-Programming/</loc>
+    <loc>https://yuhang-ji.github.io/categories/Markdown/</loc>
     <lastmod>2024-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
