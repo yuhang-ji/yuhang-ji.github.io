@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="container-lg">
+        {% unless page.navbar_title == "Home" %}
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
+        {% endunless %}
+
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-map"></i> Menu
         </button>
