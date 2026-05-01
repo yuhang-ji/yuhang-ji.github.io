@@ -110,3 +110,21 @@ div.lazy {
     top: 80px !important;
   }
 }
+
+.navbar-wide-custom {
+  width: 100%;
+  max-width: 1240px !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-wide-custom {
+  width: 100%;
+  max-width: 1240px !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
