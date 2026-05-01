@@ -1,5 +1,5 @@
 ---
-title: "Design Ad-Supported LLM Platforms"
+title: "1. Design Ad-Supported LLM Platforms"
 authors:
   - Yuhang Ji
 venue: "Work in Progress"
@@ -11,4 +11,5 @@ authors:
   - Fasheng Xu
   - Tianjun Feng
 
+keywords: "Generative AI, LLM platforms, advertising, mechanism design, platform economics"
 ---
