@@ -42,6 +42,19 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
+.profile-mini-name {
+    font-size: 1.35rem;
+    margin-bottom: 0.65rem;
+}
+
+.profile-chinese-name {
+    margin-left: 0.6rem;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Microsoft YaHei", serif;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.6) !important;
     backdrop-filter: blur(16px);
