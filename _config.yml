@@ -16,7 +16,7 @@
 url: "https://yuhang-ji.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Yuhang Ji | Personal Homepage"
-description: "Personal academic website of Yuhang Ji, Ph.D. Candidate in Management Science at Fudan University. Research interests: AI economics, OM-marketing interface, and privacy economics."
+description: "Yuhang Ji is a Ph.D. candidate in Management Science at Fudan University, researching AI economics, OM-marketing interface, and privacy economics."
 
 # Build settings
 markdown: kramdown
