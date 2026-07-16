@@ -4,7 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <title>{% if page.title == 'Home' %}{{ site.title }}{% else %}{{ page.title }} - {{ site.data.profile.navbar_name }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yuhang Ji",
+      "url": "{{ site.url }}",
+      "email": "mailto:{{ site.data.profile.email }}",
+      "jobTitle": "Ph.D. Candidate in Management Science",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Fudan University"
+      },
+      "knowsAbout": ["AI economics", "operations management", "marketing", "privacy economics"]
+    }
+    </script>
+    {% endif %}
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon/favicon.png?v=2' | relative_url }}">
