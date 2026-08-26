@@ -80,14 +80,20 @@
                         </a>
                         {% endif %}
 
+                        {% if site.data.profile.ssrn %}
+                        <a class="px-1 no-break profile-icon" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.ssrn }}" title="SSRN" aria-label="SSRN">
+                            <i class="ai ai-ssrn"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.orcid %}
-                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                        <a class="px-1 no-break profile-icon" target="_blank" rel="noopener noreferrer" href="https://orcid.org/{{ site.data.profile.orcid }}" title="ORCID" aria-label="ORCID">
                             <i class="fab fa-orcid"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.email %}
-                        <a class="profile-icon" href="mailto:{{ site.data.profile.email }}" title="Email">
+                        <a class="px-1 no-break profile-icon" href="mailto:{{ site.data.profile.email }}" title="Email" aria-label="Email">
                             <i class="fas fa-envelope"></i> 
                         </a>
                         {% endif %}

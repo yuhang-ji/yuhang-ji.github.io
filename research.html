@@ -5,6 +5,56 @@ navbar_title: Research
 container_class: page-wide-custom
 ---
 
+<style>
+  .ssrn-paper-title-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ssrn-paper-title-link:hover,
+  .ssrn-paper-title-link:focus-visible {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  .ssrn-paper-title-text {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    padding-bottom: 0.12em;
+    transition: background-size 0.28s ease;
+  }
+
+  .ssrn-paper-title-link:hover .ssrn-paper-title-text,
+  .ssrn-paper-title-link:focus-visible .ssrn-paper-title-text {
+    background-size: 100% 2px;
+  }
+
+  .external-link-arrow {
+    display: inline-block;
+    margin-left: 0.25em;
+    color: #7a7a7a;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ssrn-paper-title-link:hover .external-link-arrow,
+  .ssrn-paper-title-link:focus-visible .external-link-arrow {
+    color: #2563eb;
+    transform: translate(2px, -2px);
+  }
+
+  .working-paper-list {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .working-paper-list > li + li {
+    margin-top: 0.9rem;
+  }
+</style>
+
 
 <div class="my-3 bg-white shadow-sm rounded-xl p-4">
 
@@ -12,7 +62,7 @@ container_class: page-wide-custom
     Working Papers
   </h3>
 
-  <ul style="font-size: 1rem; line-height: 1.6;">
+  <ol class="working-paper-list">
     <li>
       <strong>Design Ad-Supported LLM Platforms</strong>
       <ul style="list-style-type: none; padding-left: 1.2rem; margin-top: 0.4rem;">
@@ -20,20 +70,34 @@ container_class: page-wide-custom
       </ul>
     </li>
 
-    <li style="margin-top: 0.6rem;">
+    <li>
       <strong>Building on a Moving Frontier: Investment Erosion and Application Competition above Foundation Models</strong>
       <ul style="list-style-type: none; padding-left: 1.2rem; margin-top: 0.4rem;">
         <li>-- <strong>Yuhang Ji</strong>, Fasheng Xu, Tianxin Zou</li>
       </ul>
     </li>
 
-    <li style="margin-top: 0.6rem;">
-      <strong>Personalized Pricing Under Limited Capacity</strong>
+    <li>
+      <a class="ssrn-paper-title-link"
+         href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7345420"
+         target="_blank"
+         rel="noopener noreferrer"
+         title="View on SSRN"
+         aria-label="View Personalized Pricing Under Limited Capacity on SSRN">
+        <strong><span class="ssrn-paper-title-text">Personalized Pricing Under Limited Capacity</span></strong><span class="external-link-arrow" aria-hidden="true">↗️</span>
+      </a>
       <ul style="list-style-type: none; padding-left: 1.2rem; margin-top: 0.4rem;">
         <li>-- <strong>Yuhang Ji</strong>, Huiqi Guan, Tianjun Feng, Fuqiang Zhang</li>
       </ul>
     </li>
 
-  </ul>
+    <li>
+      <strong>Beyond Aggregate Product Improvement: How Privacy Regulation Reshapes Innovation Portfolios</strong>
+      <ul style="list-style-type: none; padding-left: 1.2rem; margin-top: 0.4rem;">
+        <li>-- Luyu Chang, <strong>Yuhang Ji</strong>, Tianjun Feng</li>
+      </ul>
+    </li>
+
+  </ol>
 
 </div>
