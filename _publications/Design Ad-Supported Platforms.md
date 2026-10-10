@@ -1,5 +1,5 @@
 ---
-title: "1. Designing Ad-Supported LLM Platforms"
+title: "1. Advertising and Subscription Design on LLM Platforms"
 authors:
   - Yuhang Ji
 venue: "Work in Progress"
