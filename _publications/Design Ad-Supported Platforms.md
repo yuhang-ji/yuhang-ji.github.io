@@ -11,5 +11,5 @@ authors:
   - Fasheng Xu
   - Tianjun Feng
 
-keywords: "Generative AI, LLM platforms, advertising, mechanism design, platform economics"
+keywords: "generative AI; advertising; screening and mechanism design; nonlinear pricing; consumer welfare"
 ---
