@@ -77,6 +77,52 @@ h1, h2, h3, h4, h5, h6,
     text-decoration: none;
 }
 
+.profile-contact-row {
+    padding-top: 0.7rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.profile-contact-pill {
+    -webkit-user-select: none;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.33rem;
+    min-height: 2.16rem;
+    padding: 0.28rem 0.65rem;
+    border: 1px solid #ded9d2;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(30, 31, 30, 0.06);
+    color: #4c4b49;
+    font-size: 0.825rem;
+    font-weight: 700;
+    line-height: 1.2;
+    vertical-align: middle;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.profile-contact-pill + .profile-contact-pill {
+    margin-left: 0.38rem;
+}
+
+.profile-contact-pill svg {
+    display: block;
+    width: 0.85rem;
+    height: 0.85rem;
+    flex: none;
+    stroke-width: 2;
+}
+
+.profile-contact-pill:hover,
+.profile-contact-pill:focus-visible {
+    border-color: #9db6d8;
+    box-shadow: 0 3px 8px rgba(30, 61, 110, 0.1);
+    color: #2563eb;
+}
+
 .cover-image {
     width: 180px;
     max-height: 120px;
@@ -109,6 +155,49 @@ div.lazy {
 .conference-badge {
     -webkit-user-select: none;
     user-select: none;
+}
+
+.school-logo {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.external-title-link {
+    color: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.external-title-link:hover,
+.external-title-link:focus-visible {
+    color: #2563eb;
+    text-decoration-color: currentColor;
+}
+
+.external-title-tail {
+    white-space: nowrap;
+}
+
+.external-link-icon {
+    display: inline-flex;
+    margin-left: 0.3em;
+    vertical-align: -0.12em;
+    color: #7a7a7a;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.external-link-icon svg {
+    display: block;
+}
+
+.external-title-link:hover .external-link-icon,
+.external-title-link:focus-visible .external-link-icon {
+    color: #2563eb;
+    transform: translate(2px, -2px);
 }
 
 .email-text {

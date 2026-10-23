@@ -1,5 +1,5 @@
 ---
-title: "1. Advertising and Subscription Design on LLM Platforms"
+title: "1. Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms"
 authors:
   - Yuhang Ji
 venue: "Work in Progress"
@@ -11,5 +11,5 @@ authors:
   - Fasheng Xu
   - Tianjun Feng
 
-keywords: "generative AI; advertising; screening and mechanism design; nonlinear pricing; consumer welfare"
+keywords: "Generative AI; LLM platforms; advertising; subscription design; mechanism design"
 ---

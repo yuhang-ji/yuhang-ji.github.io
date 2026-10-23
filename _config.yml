@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 url: "https://yuhang-ji.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Yuhang Ji | Personal Homepage"
-description: "Yuhang Ji is a Ph.D. candidate in Management Science at Fudan University, researching AI economics, OM-marketing interface, and privacy economics."
+title: "Yuhang Ji (纪玉航)"
+description: "Yuhang Ji (纪玉航) is a Ph.D. candidate in Management Science at Fudan University. Research interests include AI economics, operations and marketing, and privacy economics."
 
 # Build settings
 markdown: kramdown
