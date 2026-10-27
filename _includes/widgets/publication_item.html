@@ -1,5 +1,8 @@
 {% assign item = include.item %}
 {%- capture publication_title -%}
+    {%- if item.order -%}
+        <span class="publication-number">{{ item.order }}.&nbsp;</span>
+    {%- endif -%}
     {%- if item.title_url -%}
         {%- assign title_words = item.title | split: ' ' -%}
         {%- assign title_prefix_length = title_words.size | minus: 1 -%}

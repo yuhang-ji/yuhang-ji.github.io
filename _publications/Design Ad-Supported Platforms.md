@@ -1,5 +1,5 @@
 ---
-title: "1. Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms"
+title: "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms"
 title_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7662578"
 authors:
   - Yuhang Ji
