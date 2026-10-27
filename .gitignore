@@ -8,3 +8,6 @@ vendor/
 Gemfile.lock
 
 .DS_Store
+
+# CV source is maintained in its separate Overleaf repository
+689e929e3d0015795f22b293/
