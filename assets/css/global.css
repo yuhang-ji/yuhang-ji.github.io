@@ -171,7 +171,8 @@ div.lazy {
     vertical-align: -0.2em;
 }
 
-.external-title-link {
+.external-title-link,
+.award-photo-link {
     color: inherit;
     text-decoration-line: underline;
     text-decoration-color: transparent;
@@ -258,7 +259,9 @@ div.lazy {
 }
 
 .external-title-link:hover,
-.external-title-link:focus-visible {
+.external-title-link:focus-visible,
+.award-photo-link:hover,
+.award-photo-link:focus-visible {
     color: #2563eb;
     text-decoration-color: currentColor;
 }
@@ -291,23 +294,22 @@ div.lazy {
 }
 
 .award-photo-link {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-underline-offset: 0.18em;
     cursor: zoom-in;
 }
 
-.award-photo-link:hover,
-.award-photo-link:focus-visible {
-    color: #2563eb;
-    text-decoration-color: currentColor;
+.award-photo-link i {
+    display: inline-block;
+    margin-left: 0.2em;
+    vertical-align: -0.06em;
+    color: #7a7a7a;
+    font-size: 0.85em;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.award-photo-link i {
-    margin-left: 0.2em;
-    color: #777;
-    font-size: 0.85em;
+.award-photo-link:hover i,
+.award-photo-link:focus-visible i {
+    color: #2563eb;
+    transform: translate(2px, -2px);
 }
 
 .award-photo-preview {
@@ -325,7 +327,7 @@ div.lazy {
     opacity: 0;
     visibility: hidden;
     transform: translateY(4px);
-    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
     pointer-events: none;
 }
 
