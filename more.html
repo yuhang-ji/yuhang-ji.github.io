@@ -74,7 +74,20 @@ container_class: page-wide-custom
       <strong>Hobbies:</strong> Basketball; Badminton; Video Production
       <ul style="list-style-type: none; padding-left: 1.2rem; margin-top: 0.4rem;">
         <li>- Runner-up, Shanghai Collegiate Basketball League (2023)</li>
-        <li>- Champion, 3v3 Basketball Tournament, Fudan University (2022, 2025)</li>
+        <li>
+          - <span class="award-photo-trigger">
+            <a class="award-photo-link"
+               href="{{ '/assets/images/honors/fudan-3v3-basketball-champions-2025.jpg' | relative_url }}"
+               data-toggle="modal"
+               data-target="#basketball-champions-photo-modal"
+               aria-haspopup="dialog"
+               aria-label="View the 2025 Fudan University 3v3 basketball championship team photo">Champion, 3v3 Basketball Tournament, Fudan University (2022, 2025) <i class="far fa-image" aria-hidden="true"></i></a>
+            <span class="award-photo-preview" aria-hidden="true">
+              <img src="{{ '/assets/images/honors/fudan-3v3-basketball-champions-2025.jpg' | relative_url }}" width="5254" height="3848" alt="" loading="lazy" decoding="async">
+              <span>2025 championship team photo</span>
+            </span>
+          </span>
+        </li>
         <li>- Champion, Manager Cup (Basketball), Fudan University (2022-2025)</li>
         <li>- <a class="external-title-link"
                  href="https://www.bilibili.com/video/BV1ko4y1Q7sS/"
@@ -89,4 +102,20 @@ container_class: page-wide-custom
 
   </ul>
 
+</div>
+
+<div class="modal fade award-photo-modal" id="basketball-champions-photo-modal" tabindex="-1" role="dialog" aria-labelledby="basketball-champions-photo-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="basketball-champions-photo-title">2025 Fudan University 3v3 Basketball Champions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close photo">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="img-fluid" src="{{ '/assets/images/honors/fudan-3v3-basketball-champions-2025.jpg' | relative_url }}" width="5254" height="3848" alt="Four members of the 2025 Fudan University 3v3 basketball championship team" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
 </div>

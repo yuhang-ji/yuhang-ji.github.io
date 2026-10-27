@@ -285,6 +285,83 @@ div.lazy {
     transform: translate(2px, -2px);
 }
 
+.award-photo-trigger {
+    position: relative;
+    display: inline-block;
+}
+
+.award-photo-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.18em;
+    cursor: zoom-in;
+}
+
+.award-photo-link:hover,
+.award-photo-link:focus-visible {
+    color: #2563eb;
+    text-decoration-color: currentColor;
+}
+
+.award-photo-link i {
+    margin-left: 0.2em;
+    color: #777;
+    font-size: 0.85em;
+}
+
+.award-photo-preview {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 0.5rem);
+    z-index: 1030;
+    width: 15rem;
+    max-width: calc(100vw - 3rem);
+    padding: 0.35rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.55rem;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+    pointer-events: none;
+}
+
+.award-photo-trigger:hover .award-photo-preview,
+.award-photo-trigger:focus-within .award-photo-preview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.award-photo-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.award-photo-preview span {
+    display: block;
+    padding: 0.25rem 0.1rem 0.05rem;
+    color: #666;
+    font-size: 0.75rem;
+    line-height: 1.3;
+}
+
+.award-photo-modal .modal-body img {
+    max-height: calc(100vh - 10rem);
+    object-fit: contain;
+}
+
+@media (hover: none) {
+    .award-photo-preview {
+        display: none;
+    }
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
