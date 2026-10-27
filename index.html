@@ -27,11 +27,21 @@ container_class: container-custom
         {% endif %}
 
         {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {% assign revisions = site.publications | where: "under_revision", true | sort: "order" %}
+        {% if revisions.size > 0 %}
+        {%
+        include widgets/publication_card.html
+        publications=revisions
+        title='<i class="fas fa-pen-to-square home-section-icon" aria-hidden="true"></i>Under Revision'
+        card_class='home-publication-card home-under-revision'
+        %}
+        {% endif %}
+        {% assign pubs = site.publications | where: "selected", true | sort: "order" %}
         {%
         include widgets/publication_card.html
         publications=pubs
-        title='<i class="fas fa-star"></i> Selected Research'
+        title='<i class="fas fa-book-open home-section-icon" aria-hidden="true"></i>Working Papers'
+        card_class='home-publication-card home-working-papers'
         %}
         {% endif %}
     </div>

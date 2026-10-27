@@ -163,6 +163,14 @@ div.lazy {
     -webkit-user-drag: none;
 }
 
+.school-logo-inline {
+    width: 18px;
+    height: 18px;
+    margin-left: 0.35rem;
+    object-fit: contain;
+    vertical-align: -0.2em;
+}
+
 .external-title-link {
     color: inherit;
     text-decoration-line: underline;
@@ -170,6 +178,83 @@ div.lazy {
     text-decoration-thickness: 2px;
     text-underline-offset: 0.18em;
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.home-publication-card h5 {
+    font-size: 1.1rem;
+}
+
+.home-publication-card {
+    --paper-number-column: 1.4rem;
+}
+
+.home-publication-card .publication-number {
+    display: inline-block;
+    width: var(--paper-number-column);
+}
+
+.home-publication-card .publication-authors,
+.home-publication-card .publication-keywords,
+.home-under-revision .publication-revision-title {
+    padding-left: var(--paper-number-column);
+}
+
+.home-working-papers .publication-item-last .publication-keywords {
+    padding-bottom: 0.35rem;
+}
+
+.home-under-revision .publication-status-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.home-under-revision .publication-status-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.journal-badge,
+.revision-badge {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.journal-badge {
+    border: 1px solid #c98c8f;
+    border-radius: 0.45rem;
+    padding: 0.1rem 0.65rem;
+    background: #fff7f7;
+    color: #9d343b;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.revision-badge {
+    border-radius: 999px;
+    padding: 0.15rem 0.75rem;
+    background: #f4ecdc;
+    color: #96620b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.home-section-icon {
+    margin-right: 0.5em;
+}
+
+.experience-heading {
+    display: grid;
+    grid-template-columns: 1.75rem minmax(0, 1fr);
+    align-items: center;
+}
+
+.experience-item-list {
+    margin-left: 1.75rem;
 }
 
 .external-title-link:hover,

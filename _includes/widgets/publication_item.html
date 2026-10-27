@@ -1,8 +1,10 @@
 {% assign item = include.item %}
 {%- capture publication_title -%}
-    {%- if item.order -%}
-        <span class="publication-number">{{ item.order }}.&nbsp;</span>
-    {%- endif -%}
+    {%- unless item.under_revision -%}
+        {%- if item.order -%}
+            <span class="publication-number">{{ item.order }}.&nbsp;</span>
+        {%- endif -%}
+    {%- endunless -%}
     {%- if item.title_url -%}
         {%- assign title_words = item.title | split: ' ' -%}
         {%- assign title_prefix_length = title_words.size | minus: 1 -%}
@@ -11,13 +13,25 @@
         {{ item.title }}
     {%- endif -%}
 {%- endcapture -%}
+{%- capture publication_status -%}
+    {%- if item.under_revision -%}
+        <div class="publication-status-row">
+            <span class="publication-number">{{ item.order }}.&nbsp;</span>
+            <span class="publication-status-badges">
+                <span class="journal-badge">{{ item.journal }}</span>
+                <span class="revision-badge">{{ item.revision_status }}</span>
+            </span>
+        </div>
+    {%- endif -%}
+{%- endcapture -%}
 
-<div class="d-none d-md-block">
+<div class="d-none d-md-block{% if include.last %} publication-item-last{% endif %}">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-12 p-3">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ publication_title }}</h5>
+            {{ publication_status }}
+            <h5 class="mt-0 mb-1 font-weight-normal{% if item.under_revision %} publication-revision-title{% endif %}">{{ publication_title }}</h5>
 
-            <p class="mt-0 mb-0 small">
+            <p class="mt-0 mb-0 small publication-authors">
                 {% include widgets/author_list.html authors=item.authors %}
             </p>
 
@@ -27,7 +41,7 @@
             </p>
 
             {% if item.keywords %}
-            <p class="mt-0 mb-0 small text-muted">
+            <p class="mt-0 mb-0 small text-muted publication-keywords">
                 <strong>Keywords:</strong> {{ item.keywords }}
             </p>
             {% endif %}
@@ -48,14 +62,15 @@
     </div>
 </div>
 
-<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}">
+<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom publication-item-last{% endif %}">
     <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}" style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
-                <h5 class="mt-0 mb-1 font-weight-normal">{{ publication_title }}</h5>
+                {{ publication_status }}
+                <h5 class="mt-0 mb-1 font-weight-normal{% if item.under_revision %} publication-revision-title{% endif %}">{{ publication_title }}</h5>
 
-                <p class="mt-0 mb-0 small">
+                <p class="mt-0 mb-0 small publication-authors">
                     {% include widgets/author_list.html authors=item.authors %}
                 </p>
 
@@ -65,7 +80,7 @@
                 </p>
 
                 {% if item.keywords %}
-                <p class="mt-0 mb-0 small text-muted">
+                <p class="mt-0 mb-0 small text-muted publication-keywords">
                     <strong>Keywords:</strong> {{ item.keywords }}
                 </p>
                 {% endif %}

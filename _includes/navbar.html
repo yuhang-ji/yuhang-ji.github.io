@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
-    {% assign wide_pages = "Home,Research,More" | split: "," %}
+    {% assign wide_pages = "Home,More" | split: "," %}
 
     <div class="container-lg {% if wide_pages contains page.navbar_title %}navbar-wide-custom{% endif %}">
         {% unless page.navbar_title == "Home" %}

@@ -7,9 +7,6 @@ layout: null
     <loc>{{ '/' | absolute_url }}</loc>
   </url>
   <url>
-    <loc>{{ '/research.html' | absolute_url }}</loc>
-  </url>
-  <url>
     <loc>{{ '/more.html' | absolute_url }}</loc>
   </url>
 </urlset>
