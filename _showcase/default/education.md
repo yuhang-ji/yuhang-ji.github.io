@@ -13,7 +13,7 @@ date: 2020-01-12 00:01:00 +0800
                 <div>{{ item.name }}</div>
                 <div class="small">{{ item.dept }}</div>
                 <div class="small d-flex">
-                    <div>{{ item.position }}</div>
+                    <div>{{ item.position }}{% if item.minor %}<br>{{ item.minor }}{% endif %}</div>
                     <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                 </div>
             </div>

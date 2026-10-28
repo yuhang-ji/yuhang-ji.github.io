@@ -258,6 +258,10 @@ div.lazy {
     margin-left: 1.75rem;
 }
 
+.experience-detail-lines {
+    padding-left: 0.8rem;
+}
+
 .external-title-link:hover,
 .external-title-link:focus-visible,
 .award-photo-link:hover,

@@ -42,9 +42,8 @@ education:
 
   - name: Tianjin University
     logo: /assets/images/badges/tju-logo.png
-    position: >-
-      B.S. in E-commerce<br>
-      Minor in Computer Science and Technology
+    position: B.S. in E-commerce
+    minor: Minor in Computer Science and Technology
     date: Sep. 2017 - Jul. 2021
 
 experience:

@@ -15,8 +15,11 @@
                                             <div class="school-name">{{ item.name }}<img src="{{ item.logo | relative_url }}" alt="" class="school-logo school-logo-inline" draggable="false"></div>
                                             <div class="ml-auto no-break small"><em>{{ item.date }}</em></div>
                                         </div>
-                                        <div class="small">{{ item.position }}</div>
-                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="experience-detail-lines small">
+                                            <div>{{ item.position }}</div>
+                                            {% if item.minor %}<div>{{ item.minor }}</div>{% endif %}
+                                            {% if item.dept %}<div>{{ item.dept }}</div>{% endif %}
+                                        </div>
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -37,8 +40,10 @@
                                             <div class="school-name">{{ item.name }}<img src="{{ item.logo | relative_url }}" alt="" class="school-logo school-logo-inline" draggable="false"></div>
                                             <div class="ml-auto no-break small"><em>{{ item.date }}</em></div>
                                         </div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small">{{ item.position }}</div>
+                                        <div class="experience-detail-lines small">
+                                            {% if item.dept %}<div>{{ item.dept }}</div>{% endif %}
+                                            <div>{{ item.position }}</div>
+                                        </div>
                                     </div>
                                 </li>
                                 {% endfor %}
