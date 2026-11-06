@@ -19,12 +19,15 @@ container_class: container-custom
             {% include widgets/experience_card.html %}
         {% endif %}
 
+        {% comment %}Restore this block when there is new homepage news.{% endcomment %}
+        {% comment %}
         {% if site.data.display.homepage.show_news %}
         {% assign count_news = site.news | size %}
         {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
         {% endif %}
         {% endif %}
+        {% endcomment %}
 
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign revisions = site.publications | where: "under_revision", true | sort: "order" %}
